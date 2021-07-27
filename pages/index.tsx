@@ -1,11 +1,10 @@
-import { initializeIcons } from '@fluentui/font-icons-mdl2';
-import MenuButton from "../components/menuButton/menuButton";
+import {useState} from "react";
 
 export default function Index() {
 
-  initializeIcons();
+  const [showMenu, setMenu] = useState<boolean>(false);
 
   return (
-      <MenuButton/>
+      <></>
   )
 }
