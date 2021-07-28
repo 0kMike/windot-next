@@ -8,6 +8,7 @@ export const ThemeContext = React.createContext<iTheme>({
     accent: accent.blue,
     text: text.dark
 });
+export const MenuContext = React.createContext<boolean>(false);
 
 export default function Home() {
 
@@ -26,7 +27,9 @@ export default function Home() {
 
     return (
         <ThemeContext.Provider value={theme}>
-            <Header/>
+            <MenuContext.Provider value={showMenu}>
+                <Header/>
+            </MenuContext.Provider>
         </ThemeContext.Provider>
     )
 }
