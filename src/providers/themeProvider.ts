@@ -1,5 +1,5 @@
 export enum primary {
-    light = "#edebe9",
+    light = "#e9e9e9",
     dark = "#201f1e",
 }
 
