@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 
+:root {
+  --shadow-default: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 html,
 body {
   padding: 0;

@@ -1,6 +1,6 @@
 .header {
     align-content: center;
-    box-shadow: 0 0 5px black;
+    box-shadow: var(--shadow-default);
     display: flex;
     flex-direction: row;
     height: 100px;
