@@ -4,13 +4,11 @@ import Content from "../content/content";
 
 export default function Page(props: any) {
 
-
-
     return (
-        <div>
+        <div className={styles.container}>
             <Header/>
             <Content>
-            {props.children}
+                {props.children}
             </Content>
         </div>
     )

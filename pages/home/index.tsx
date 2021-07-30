@@ -1,10 +1,9 @@
 import Header from "../../src/components/header/header";
 import React, {useContext, useEffect, useState} from "react";
 import {accent, iTheme, primary, secondary, text} from "../../src/providers/themeProvider";
-import Background from "../../src/components/background/background";
-import {Container} from "postcss";
 import Content from "../../src/components/content/content";
 import styles from './home.module.css'
+import Page from "../../src/components/page/page";
 
 export const ThemeContext = React.createContext<iTheme>({
     primary: primary.light,
@@ -32,12 +31,9 @@ export default function Home() {
     return (
         <ThemeContext.Provider value={theme}>
             <MenuContext.Provider value={showMenu}>
-                <div className={styles.container}>
-                    <Header/>
-                    <Content>
-                        huhu
-                    </Content>
-                </div>
+                    <Page>
+
+                    </Page>
             </MenuContext.Provider>
         </ThemeContext.Provider>
     )
