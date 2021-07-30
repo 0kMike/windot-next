@@ -9,17 +9,14 @@ import {primary} from "../../providers/themeProvider";
 export default function MenuButton() {
 
     const theme = useContext(ThemeContext)
-    const [bgColor, setBgColor] = useState<string>(theme.primary)
+    const [svgColor, setSvgColor] = useState<string>(theme.primary)
 
     return (
         <button
             className={styles.button}
-            style={{backgroundColor: bgColor}}
-            onMouseEnter={() => setBgColor(theme.secondary)}
-            onMouseLeave={() => setBgColor(theme.primary)}>
-            {theme.primary === primary.light ?
-                <Image src={menuIconBlack} alt={'menu button'}/> :
-                <Image src={menuIconWhite} alt={'menu button'}/>}
+            onMouseEnter={() => setSvgColor(theme.secondary)}
+            onMouseLeave={() => setSvgColor(theme.primary)}>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill={svgColor}><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
         </button>
     )
 }

@@ -9,6 +9,9 @@ export default function Header() {
 
     return (
         <header className={styles.header} style={{backgroundColor: theme.accent}}>
+            <div className={styles.title} style={{color: theme.primary}}>
+                windot
+            </div>
             <MenuButton/>
         </header>
     )
