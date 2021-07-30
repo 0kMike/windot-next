@@ -3,4 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     height: 100px;
+    box-shadow: 0 0 5px black;
+    z-index: 1;
 }
