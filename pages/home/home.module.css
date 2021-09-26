@@ -1,12 +1,12 @@
 .container {
     border-radius: 3px;
+    box-shadow: var(--shadow-default);
     display: flex;
     flex-direction: column;
     height: auto;
     margin: 100px 0 0 0;
-    width: 80%;
-    box-shadow: var(--shadow-default);
     padding: 25px;
+    width: 80%;
 }
 
 

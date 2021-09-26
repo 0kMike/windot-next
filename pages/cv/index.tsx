@@ -1,6 +1,6 @@
 import Page from "../../src/components/page/page";
 
-export default function CV() {
+export default function Index() {
     return (
         <Page>
 

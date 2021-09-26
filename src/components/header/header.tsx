@@ -1,17 +1,20 @@
 import styles from './header.module.css'
 import MenuButton from "../menuButton/menuButton";
 import {useContext} from "react";
-import {ThemeContext} from "../../../pages/home";
+import Link from 'next/link'
+import {ThemeContext} from "../../providers/themeProvider";
 
 export default function Header() {
 
     const theme = useContext(ThemeContext)
 
     return (
-        <header className={styles.header} style={{backgroundColor: theme.accent}}>
-            <div className={styles.title} style={{color: theme.primary}}>
-                windot
-            </div>
+        <header className={styles.header}>
+            <Link href={"/home"}>
+                <div className={styles.title} style={{color: theme.accent}}>
+                    windot
+                </div>
+            </Link>
             <MenuButton/>
         </header>
     )
