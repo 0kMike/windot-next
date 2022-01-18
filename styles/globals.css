@@ -1,31 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  @apply;
-}
-
-html,
-body {
-  @apply bg-gray-500
-    font-sans
+  @apply bg-grey-900
+    text-grey-200
+    dark:bg-grey-50
+    dark:text-grey-900
     h-screen
-    m-0
-    overflow-hidden
-    select-none
-    w-screen
-    border-box
-    dark:text-white;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  @apply;
+    w-screen;
 }
