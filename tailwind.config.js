@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx}',
     './styles/**.{js,ts,jsx,tsx,css}',
+    './src/components/**/*.{js,ts,jsx,tsx,css}',
   ],
   theme: {
     colors: {
@@ -20,6 +21,19 @@ module.exports = {
         700: '#3F3F3F',
         800: '#2e2e2e',
         900: '#1c1c1c',
+      },
+      blue: {
+        DEFAULT: '#3071E8',
+        50: '#D5E2FA',
+        100: '#C3D6F8',
+        200: '#9EBDF4',
+        300: '#79A3F0',
+        400: '#558AEC',
+        500: '#3071E8',
+        600: '#1656CA',
+        700: '#114097',
+        800: '#0B2B65',
+        900: '#061532',
       },
     },
     extend: {},
