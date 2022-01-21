@@ -1,10 +1,9 @@
-import styles from './header.module.css';
 import Link from 'next/link';
 import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
 
 export default function Header() {
   return (
-    <header className="bg-black text-white h-16 flex flex-row justify-between items-center p-2 m-0">
+    <header className="bg-none text-white h-16 w-screen flex flex-row justify-between items-center p-2 m-0 z-1">
       <section>
         <Link href={'/home'}>windot</Link>
       </section>

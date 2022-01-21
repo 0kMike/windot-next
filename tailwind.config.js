@@ -9,6 +9,30 @@ module.exports = {
   ],
   theme: {
     colors: {
+      transparentBlack: {
+        DEFAULT: 'rgba(0,0,0,0.3)',
+        0.1: 'rgba(0,0,0,0.1)',
+        0.2: 'rgba(0,0,0,0.2)',
+        0.3: 'rgba(0,0,0,0.3)',
+        0.4: 'rgba(0,0,0,0.4)',
+        0.5: 'rgba(0,0,0,0.5)',
+        0.6: 'rgba(0,0,0,0.6)',
+        0.7: 'rgba(0,0,0,0.7)',
+        0.8: 'rgba(0,0,0,0.8)',
+        0.9: 'rgba(0,0,0,0.9)',
+      },
+      transparentWhite: {
+        DEFAULT: 'rgba(255,255,255,0.3)',
+        0.1: 'rgba(255,255,255,0.1)',
+        0.2: 'rgba(255,255,255,0.2)',
+        0.3: 'rgba(255,255,255,0.3)',
+        0.4: 'rgba(255,255,255,0.4)',
+        0.5: 'rgba(255,255,255,0.5)',
+        0.6: 'rgba(255,255,255,0.6)',
+        0.7: 'rgba(255,255,255,0.7)',
+        0.8: 'rgba(255,255,255,0.8)',
+        0.9: 'rgba(255,255,255,0.9)',
+      },
       grey: {
         DEFAULT: '#777777',
         50: '#D3D3D3',
@@ -35,8 +59,48 @@ module.exports = {
         800: '#0B2B65',
         900: '#061532',
       },
+      yellow: {
+        DEFAULT: '#FFBB11',
+        50: '#FFEFC9',
+        100: '#FFEAB4',
+        200: '#FFDE8B',
+        300: '#FFD263',
+        400: '#FFC73A',
+        500: '#FFBB11',
+        600: '#D89A00',
+        700: '#A07200',
+        800: '#684A00',
+        900: '#302200',
+      },
     },
-    extend: {},
+    extend: {
+      width: {
+        '2/1': '200%',
+      },
+      zIndex: {
+        1: '1',
+      },
+      keyframes: {
+        fromTop: {
+          '0%': { transform: 'translateY(-100vh) rotate(12deg)' },
+          '100%': { transform: 'translateY(0) rotate(12deg)' },
+        },
+        fromBottom: {
+          '0%': { transform: 'translateY(100vh) rotate(-6deg)' },
+          '100%': { transform: 'translateY(0) rotate(-6deg)' },
+        },
+        popOut: {
+          '0%': { transform: 'scale(0.1)' },
+          '80%': { transform: 'scale(1.2)' },
+          '100%': { transform: 'scale(1.0)' },
+        },
+      },
+      animation: {
+        fromTop: 'fromTop 1.2s cubic-bezier(0.0, 0, 0.3, 1) 1',
+        fromBottom: 'fromBottom 1.2s cubic-bezier(0.0, 0, 0.3, 1) 1',
+        popOut: 'popPut 1.2s ease-out 1',
+      },
+    },
   },
   plugins: [],
 };

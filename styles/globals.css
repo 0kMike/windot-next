@@ -3,10 +3,39 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-grey-900
+  @apply h-screen
+    w-screen
+    box-border
+    text-base;
+}
+
+html,
+body {
+  @apply flex
+    flex-col
+    box-border
+    justify-start
+    items-center
+    h-screen
+    w-screen
+    p-0
+    m-0
     text-grey-200
-    dark:bg-grey-50
+    bg-grey-200
+    dark:bg-grey-900
     dark:text-grey-900
+    transition
+    ease-in-out
+    duration-500
+    overflow-hidden;
+}
+
+#__next {
+  @apply flex
+    flex-col
+    justify-start
+    items-center
+    bg-none
     h-screen
     w-screen;
 }

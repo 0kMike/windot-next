@@ -10,12 +10,12 @@
     before:absolute
     before:w-2/1
     before:h-full
-    before:bg-blue
-    before:rotate-12
-    before:bottom-0
-    before:left-0
+    before:bg-yellow
+    before:-rotate-6
+    before:top-3/4
+    before:-left-1/4
     before:right-0
-    before:origin-top-right
+    before:origin-top-left
     before:shadow-xl
-    before:animate-fromTop;
+    before:animate-fromBottom;
 }
