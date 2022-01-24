@@ -2,11 +2,11 @@
   @apply flex
     flex-1
     w-full
-    p-0
+    p-8
     m-0
-    flex-col
+    flex-row
     items-center
-    justify-center
+    justify-between
     before:absolute
     before:w-2/1
     before:h-full

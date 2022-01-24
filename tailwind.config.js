@@ -9,6 +9,8 @@ module.exports = {
   ],
   theme: {
     colors: {
+      white: '#FFFFFF',
+      black: '#000000',
       transparentBlack: {
         DEFAULT: 'rgba(0,0,0,0.3)',
         0.1: 'rgba(0,0,0,0.1)',
@@ -77,6 +79,12 @@ module.exports = {
       width: {
         '2/1': '200%',
       },
+      borderRadius: {
+        5: '5px',
+      },
+      borderWidth: {
+        1: '1px',
+      },
       zIndex: {
         1: '1',
       },
@@ -96,8 +104,8 @@ module.exports = {
         },
       },
       animation: {
-        fromTop: 'fromTop 1.2s cubic-bezier(0.0, 0, 0.3, 1) 1',
-        fromBottom: 'fromBottom 1.2s cubic-bezier(0.0, 0, 0.3, 1) 1',
+        fromTop: 'fromTop 1.2s cubic-bezier(0.0, 0.45, 0.3, 1) 1',
+        fromBottom: 'fromBottom 1.2s cubic-bezier(0.0, 0.45, 0.3, 1) 1',
         popOut: 'popPut 1.2s ease-out 1',
       },
     },

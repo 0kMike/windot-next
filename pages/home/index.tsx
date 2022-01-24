@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import GraphButton from '../../src/components/graphButton/GraphButton';
 import styles from './home.module.css';
 
-export default function Home() {
+export default function Home(): ReactElement {
   return (
     <main className={styles.container}>
-      <div className="z-10 rounded-l backdrop-blur p-8 box-border shadow-2xl flex flex-col items-center justify-start animate-popOut max-w-screen-sm bg-transparentBlack-0.2 dark:bg-transparentWhite-0.2 transition-all duration-500">
+      <div className="card max-w-screen-sm">
         <h1 className="text-2xl font-bold">Hello There!</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -18,7 +18,6 @@ export default function Home() {
           varius lectus, quis imperdiet nulla hendrerit vitae.
         </p>
       </div>
-      <GraphButton />
     </main>
   );
 }
