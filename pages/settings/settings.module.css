@@ -1,0 +1,21 @@
+.container {
+  @apply flex
+    flex-1
+    w-full
+    p-8
+    m-0
+    flex-row
+    items-center
+    justify-between
+    before:absolute
+    before:w-full
+    before:h-2/1
+    before:bg-orange
+    before:-rotate-45
+    before:top-0
+    before:left-1/4
+    before:right-0
+    before:origin-top-left
+    before:shadow-xl
+    before:animate-fromBottom;
+}
