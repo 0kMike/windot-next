@@ -16,8 +16,10 @@ export default function Graph(): ReactElement {
       return (
         <section
           key={index}
-          className="card m-4 flex flex-1 flex-col h-full items-center justify-between transition duration-500">
-          <div className="flex flex-col justify-end mb-4" style={inlineStyle}>
+          className="card py-8 m-4 flex flex-1 flex-col h-full items-center justify-between transition duration-500">
+          <div
+            className="flex flex-col justify-end mb-4 transition animate-grow"
+            style={inlineStyle}>
             <div className="h-8 w-8 border-box rounded-full border-4 bg-yellow border-grey-900 dark:border-yellow dark:bg-grey-900 transition duration-500" />
           </div>
           <p>{entry}</p>

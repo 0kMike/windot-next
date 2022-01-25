@@ -5,8 +5,8 @@ import styles from './home.module.css';
 export default function Home(): ReactElement {
   return (
     <main className={styles.container}>
-      <div className="card max-w-screen-sm">
-        <h1 className="text-2xl font-bold">Hello There!</h1>
+      <div className="card max-w-screen-sm p-8">
+        <h1 className="text-2xl font-bold mb-4">Hello There!</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           volutpat viverra velit, eu ultrices neque consectetur non. Sed

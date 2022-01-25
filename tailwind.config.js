@@ -89,9 +89,13 @@ module.exports = {
         1: '1',
       },
       keyframes: {
-        fromTop: {
+        fromTop12Deg: {
           '0%': { transform: 'translateY(-100vh) rotate(12deg)' },
           '100%': { transform: 'translateY(0) rotate(12deg)' },
+        },
+        grow: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
         },
         fromBottom: {
           '0%': { transform: 'translateY(100vh) rotate(-6deg)' },
@@ -104,9 +108,10 @@ module.exports = {
         },
       },
       animation: {
-        fromTop: 'fromTop 1.2s cubic-bezier(0.0, 0.45, 0.3, 1) 1',
+        fromTop12Deg: 'fromTop12Deg 1.2s cubic-bezier(0.0, 0.45, 0.3, 1) 1',
         fromBottom: 'fromBottom 1.2s cubic-bezier(0.0, 0.45, 0.3, 1) 1',
         popOut: 'popPut 1.2s ease-out 1',
+        grow: 'grow 1.2s cubic-bezier(0.0, 0.45, 0.3, 1) 1',
       },
     },
   },
